@@ -1,0 +1,24 @@
+package com.xworkz.expendituree;
+
+import com.xworkz.expenditure.constant.ExpanditureMonthly;
+import com.xworkz.expenditure.dao.ExpenditureDAO;
+import com.xworkz.expenditure.dto.ExpenditureDTO;
+
+public class ExpenditatureRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ExpenditureDTO dto=new ExpenditureDTO();
+		dto.setPurchaserName("Azhar");
+		dto.setSpentOn("wirlesscharger");
+		dto.setPrice(1200);
+		dto.setExpandatureMontly(ExpanditureMonthly.MARCH);
+		
+		ExpenditureDAO dao=new ExpenditureDAO();
+		boolean create =dao.create(dto);
+		System.out.println("created" + create);
+		
+
+	}
+
+}

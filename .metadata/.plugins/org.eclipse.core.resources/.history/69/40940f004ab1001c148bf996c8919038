@@ -1,0 +1,6 @@
+package com.xworkz.expenditure.dto;
+
+public enum expandatureMonthly {
+	JANUARY,FEBUARY,MARCH,APRIL,MAY,JUNE,JULY,AUGUST;
+
+}
