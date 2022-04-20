@@ -10,7 +10,7 @@ import java.io.ObjectOutputStream;
 public class Serialization {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Bike bike = new Bike("Goa",1065,250);
 		byte[] bytes = convertObjectToBytes(bike);
 		Bike bike1 = (Bike)	convertByteToObject(bytes);	

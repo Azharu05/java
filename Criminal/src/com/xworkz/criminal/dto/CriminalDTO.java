@@ -7,10 +7,7 @@ public class CriminalDTO {
 	private int imprisonment;
 	private String jailName;
 	
-	public CriminalDTO() {
-		super();
-		
-	}
+	
 	public CriminalDTO(int id, String name,String offense, int imprisonment, String jailName) {
 		super();
 		this.id =id;
@@ -20,11 +17,19 @@ public class CriminalDTO {
 		this.jailName= jailName;
 	}
 	
+	public String toString() {
+		
+		return "CriminalDTO [id=" + id + ", name=" + name +", offense=" +", imprisonment=" +imprisonment +" "
+				+ ", jailName=" + jailName + "]";
+	}
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
-		
+		this.id = id;
 	}
-
+	
 }
+	
+
+

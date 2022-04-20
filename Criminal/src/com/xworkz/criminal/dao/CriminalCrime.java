@@ -1,5 +1,7 @@
 package com.xworkz.criminal.dao;
 
+import com.xworkz.criminal.dto.CriminalDTO;
+
 public class CriminalCrime {
 	private CriminalDAO dao;
 	
@@ -9,11 +11,12 @@ public class CriminalCrime {
 	}
 	
 	public void validateAndSave(CriminalDTO dto) {
-		if(dto ! =null) {
-				if(dto.getID() > 0 && dto.getName ().length() > 3 && dto.getJailName().length() <50) {
-					if(dto.getImprisonment() > 0 && dto.getJailName().length() > 12 &&dto.getJailName){
+		if(dto!=null) {
+			
+				if(dto.getID() > 0 && dto.getjailtName().length() > 3 && dto.getjailName().length() <50) {
+					if(dto.Imprisonment() > 0 && dto.getjailName().length() > 12 &&dto.getjailName){
 					
-					boolean a=dao.save (dto);
+					boolean a=dao.save(dto);
 					System.out.println("Criminalname is " + " " +dto);
 					System.out.println(a);
 				}
